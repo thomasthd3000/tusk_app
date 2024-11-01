@@ -1,6 +1,6 @@
 {
-    "name": "tusk_app",
-    "short_name": "tusk_app",
+    "name": "course_tusk_app",
+    "short_name": "course_tusk_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

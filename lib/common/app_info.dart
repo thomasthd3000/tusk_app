@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tusk_app/common/app_color.dart';
+import 'app_color.dart';
 
 class AppInfo {
   static success(BuildContext context, String message) {

@@ -1,3 +1,4 @@
+import 'package:course_tusk_app/data/models/task.dart';
 import 'package:intl/intl.dart';
 
 String dateByStatus(Task task) {
@@ -7,11 +8,11 @@ String dateByStatus(Task task) {
     case 'Review':
       return _formatDateTime1(task.submitDate!);
     case 'Approved':
-      return _formatDateTime1(task.approveDate!);
-    case 'Review':
+      return _formatDateTime1(task.approvedDate!);
+    case 'Rejected':
       return _formatDateTime1(task.rejectedDate!);
     default:
-      return '-';
+      return "-";
   }
 }
 
@@ -22,12 +23,12 @@ String _formatDateTime1(DateTime dateTime) {
 String iconByStatus(Task task) {
   switch (task.status) {
     case 'Review':
-      return 'assets/review_icon.png';
+      return "assets/review_icon.png";
     case 'Approved':
-      return 'assets/approved_icon.png';
+      return "assets/approved_icon.png";
     case 'Rejected':
-      return 'assets/rejected_icon.png';
+      return "assets/rejected_icon.png";
     default:
-      return 'assets/images/queue_icon.png';
+      return "assets/queue_icon.png";
   }
 }
